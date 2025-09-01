@@ -4,8 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table Exercise</title>
+    <style>
+        h2{
+            color: red;
+            text-align: center;
+            font-style: italic;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        
+        table, th, td {
+            border: 2px rgb(223, 77, 77) solid;
+        }
+        th{
+            background-color: rgb(221, 220, 220);
+        }
+        .WTD{
+            background-color: skyblue;
+        }
+        .active{
+            background-color: rgb(245, 241, 204);
+        }
+        .python{
+            background-color: rgb(212, 135, 135);
+        }
+        .linux{
+            background-color: rgb(126, 226, 126);
+        }
+
+    </style>
 </head>
 <body>
-    <h2><i>Time Table</i></h2>
+    <h2>Time Table</h2>
+    <table>
+        <tr>
+           <th>Days/Time</th>
+           <th>08:00-10:00</th>
+           <th>10:00-12:00</th>
+           <th>13:00-15:00</th>
+           <th>15:00-17:00</th> 
+        </tr>
+        
+        <tr>
+            <th>Monday</th>
+            <td class="WTD">WTD</td>
+            <td rowspan="5" class="active">Active Directory</td>
+            <td class="python" rowspan="2" colspan="2">Python</td>
+        </tr>
+
+        <tr>
+            <th>Tuesday</th>
+            <td class="linux">Linux</td>
+        </tr>
+
+        <tr>
+            <th>Wednesday</th>
+            <td class="python">Python</td>
+            <td class="WTD">WTD</td>
+            <td class="linux">Linux</td>
+        </tr>
+
+        <tr>
+            <th>Thursday</th>
+            <td class="WTD" rowspan="2">WTD</td>
+            <td class="linux" colspan="2">Linux</td>
+        </tr>
+
+        <tr>
+            <th>Friday</th>
+            <td class="WTD">WTD</td>
+            <td class="linux">Linux</td>
+        </tr>
+    </table>
 </body>
 </html>

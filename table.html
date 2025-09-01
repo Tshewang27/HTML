@@ -13,6 +13,15 @@
             border: 1px solid black;
             border-collapse: collapse;
         }
+        
+        #spanning-table{
+            width: 50%;
+            height: 200px;
+        }
+        #spanning-table{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
     </style>
 </head>
 <body>
@@ -23,7 +32,7 @@
             <th>Phone_No</th>
         </tr>
         <tr>
-            <td>111</td>
+            <td colspan="2">111</td>
             <td>Tshewang</td>
             <td>17777777</td>
         </tr>
@@ -36,6 +45,22 @@
             <td>113</td>
             <td>Dorji</td>
             <td>17666666</td>
+        </tr>
+    </table>
+<br></br>
+    <table id="spanning-table">
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+        </tr>
+        <tr>
+            <td rowspan="2">C</td>
+            <td>D</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>G</td>
         </tr>
     </table>
     
