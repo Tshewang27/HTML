@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <div>
+        <form action="login.py" method="post" autocomplete="off">
+            <div>
+            <label for="email">email</label>
+            <input type="email" id="email" name="email">
+            </div>
+
+            <div>
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" name="password">
+            </div>
+
+            <input type="submit" value="Login">
+        </form>
+
+        <form action="">
+            <H5>Gender:</H5>
+            <input type="radio" id="male" name="Gender" value="male">
+            <label for="male">male</label><br>
+            <input type="radio" id="female" name="Gender" value="female">
+            <label for="female">female</label><br>
+            <input type="radio" id="other" name="Gender" value="other">
+            <label for="other">other</label>
+        </form>
+
+        <form action="">
+            <input type="image" src="images/td.jpg" alt="Submit" width="48" height="48">
+        </form>
+
+        <form action="">
+            <label for="course">Choose your course:</label>
+            <select name="course" id="course">
+                <option value="CSN">CSN</option>
+                <option value="MA">MA</option>
+                <option value="CE">CE</option>
+                <option value="CS">CS</option>
+            </select>
+        </form>
+    </div>
+</body>
+</html>
